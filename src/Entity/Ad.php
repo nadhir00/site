@@ -3,9 +3,6 @@
 namespace App\Entity;
 
 
-
-use App\Repository\AdRepository;
-
 use Doctrine\ORM\Mapping as ORM;
 
 use Symfony\Component\HttpFoundation\File\File;

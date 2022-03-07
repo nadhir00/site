@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+{% block title %} {{new.id}}{% endblock %}
+    {% block body %} 
+
+        <div    dir="rtl">
+            <div class="container">
+
+            <h1>{{new.title}}</h1>
+            <p> وصف </p>
+        
+            <p class="h2">
+
+                <strong>{{new.description}}</strong>   
+            <p>
+            
+            </div>
+        </div>
+
+        <div class="container"  dir="rtl" >
+            <div class="row">
+                <div class="col-md-8 mb-3">
+                   
+                   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                    
+                        <div class="carousel-item  active ">
+                        <img class="d-block b-100" src="/images/image-ads/{{ new.Picture }}" alt=" slide">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h5> {{ new.title }}</h5>
+                           <p> {{ new.description }}
+                            
+             
+                            </div>
+                        </div>
+                    
+                      
+                    </div>
+                    
+                  </div>
+                
+                </div>
+              
+                    
+              
+                
+        </div>
+        
+
+    {% endblock %}

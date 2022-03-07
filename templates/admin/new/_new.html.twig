@@ -1,0 +1,28 @@
+
+{% set url = path('new_show',{'id': new.id }) %}
+    
+    <div class="col-md-4">
+            <div class="card bg-light mb-3">
+                    <div class="card-header text-center">
+                        المستجدات   {{ new.id }}
+                    </div>
+                        <a href="{{ url }}">
+                            <img src="/images/image-ads/{{ new.getPicture }}" alt="Image de new"
+                            style="height: 200px; width:100%; display: block">
+                           
+                        </a>
+ 
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="{{ url }}">
+                            
+                            </a>
+                        </h4>
+                        <p class="card-text">
+                           
+                        </p>
+                        <a href="{{ url }}" class="btn btn-secondary"> أظهر المزيد</a>
+                    </div>
+            </div>
+            
+    </div>
